@@ -5,6 +5,7 @@ import Profile from './component/Profile';
 import DarkMode from './component/Darkmode';
 import Card from './component/Card';
 import './styles/Darkmode.css';
+import Detail from './component/detail';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <DarkMode></DarkMode>
       <Header></Header>
       <Profile></Profile>
+      <Detail></Detail>
       <Card></Card>
     </div>
   );
