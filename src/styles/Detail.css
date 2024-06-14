@@ -1,0 +1,31 @@
+.Viewer{
+    position: fixed;
+    /* background-color: aqua; */
+    left:300px;
+    right:0cap;
+    top: 79px;
+    height: 100%;
+}
+
+#Contents-box{
+    /* position: relative; */
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    /* top: 50%; */
+    
+    /* transform: translate(-2%, 30%); */
+}
+
+.Content{
+    /* position: absolute;
+    transform:translate(30%,30%); */
+    width: 70%;
+    height: 70%;
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+    margin-top: -2%;
+    margin-bottom: 6%;
+}
