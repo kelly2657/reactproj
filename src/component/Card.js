@@ -5,7 +5,7 @@ import '../styles/Card.css';
 
 function Card() {
   let [title, setTitle] = useState([
-    '내돈내산 리뷰(광고x)',
+    '나만 쓰고싶은 캐리어 추천(광고x)',
     '대만드라마 추천',
     '홍대 나들이',
     '겨울 필수템 추천',
@@ -17,16 +17,17 @@ function Card() {
     '24/06/20',
   ]);
 
+  let [good,addGood] = useState([0,0,0,0]);
+
   return (
     <div className="container">
-      <div className="SortBtn">
-        <button
+      <div>
+        <button className='SortBtn'
           onClick={() => {
             let copy = [...title];
             copy.sort();
             setTitle(copy);
-          }}
-        >
+          }}>
           글 정렬하기
         </button>
       </div>
@@ -37,7 +38,12 @@ function Card() {
             <div className="card" key={i}>
               <img src={process.env.PUBLIC_URL + '/photo' + (i + 1) + '.jpg'} />
               <div className="texts">
-                <p>{title[i]}</p>
+                <p>{title[i]}</p><span className='heart'
+                onClick={()=>{
+                  let copy = [...good];
+                  copy[i]= copy[i]+1;
+                  addGood(copy)
+                }}>❤️</span>{good[i]}
                 <span>{날짜[i]}</span>
               </div>
             </div>
