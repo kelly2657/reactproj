@@ -1,5 +1,8 @@
 .Viewer{
-    
+    position: fixed;
     background-color: aqua;
-    top: 600px;
+    left:300px;
+    right:0cap;
+    top: 79px;
+    
 }

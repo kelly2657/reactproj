@@ -14,7 +14,7 @@ function App() {
       <Header></Header>
       <Profile></Profile>
       <Detail></Detail>
-      <Card></Card>
+      {/* <Card></Card> */}
     </div>
   );
 }
