@@ -1,5 +1,8 @@
 import { isButtonElement } from "react-router-dom/dist/dom";
 import { useState } from useState();
+import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
+
+
 
 function Card(){
     let [title, setTitle] = useState(['내돈내산 리뷰(광고x)','대만드라마 추천','홍대 나들이','여름 필수템 추천'])
@@ -32,6 +35,10 @@ function Card(){
             })
         }
 
+
+
+
+        
 
 
 
