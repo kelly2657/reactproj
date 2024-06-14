@@ -36,11 +36,26 @@ function Study() {
 }
 
 
+const ContentsTitle = <h2>제주도 여행 2박3일 다녀왔습니다</h2>;
+const ContentsBody = <p> 제주도 … 2박 … 3일 … </p>;
+function Contents(){
+    return(
+        <div id="Contents-box">
+            <div className="Content">
+                <article>
+                {ContentsTitle}
+                {ContentsBody}
+                </article>
+            </div>
+        </div>
+    )
+}
+
 
 function Detail() {
     return (
         <div className="Viewer">
-        <p> 위 옆 아래</p>
+        <Contents></Contents>
         </div>
     )
 }
