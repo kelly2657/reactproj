@@ -8,6 +8,7 @@
     color: light;
     padding: 10px;
     display: flex;
+    width: 100%;
     align-items: center;
     border-bottom: 1px solid black;
     border-color: light;
