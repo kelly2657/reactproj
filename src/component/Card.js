@@ -30,7 +30,7 @@ function Card() {
         </button>
       </div>
 
-      <div className="card-container">
+      <div className="card-list">
         {title.map((a, i) => {
           return (
             <div className="card" key={i}>
