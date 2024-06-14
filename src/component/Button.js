@@ -1,6 +1,7 @@
 import { isButtonElement } from "react-router-dom/dist/dom";
 import { useState } from useState();
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
+import {photo} from '../img/photo1.jpg';
 
 
 
@@ -27,7 +28,7 @@ function Card(){
             title.map((a,i)=>{
                 return(
                     <div className="card" key={i}>
-                        <img src="" />
+                        <img src={photo+[i]} />
                         <p>{title[a]}</p> <span>{날짜[a]}</span>
                         <hr/>
                     </div>
