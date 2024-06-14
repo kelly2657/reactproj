@@ -1,7 +1,7 @@
 import { isButtonElement } from "react-router-dom/dist/dom";
 import { useState } from useState();
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
-import {photo} from '../img/photo1.jpg';
+import photo from '../img/photo1.jpg';
 
 
 
