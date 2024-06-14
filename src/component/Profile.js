@@ -10,12 +10,14 @@ function Profile() {
         <div className="Profile-style" >
             <img src={sample} className="Profile-img" />
 
-            <div id="introducing-blog"><p>제 블로그에는 ~~~ 이런 주제의 글을 올리고 있습니다</p></div>
+            <div id="introducing-blog">
+                <h2>블로거 이름</h2>
+                <p>"Welcome to my VLOG !(●'◡'●)"</p></div>
             <div id="Category"><ul className="no-dot">
-                <li><NavLink to="/foods">음식</NavLink></li>
-                <li><NavLink to="/trip">여행</NavLink></li>
-                <li><NavLink to="/festival">축제</NavLink></li>
-                <li><NavLink to="/study">공부</NavLink></li>
+                <li><NavLink to="/foods">🍙음식</NavLink></li>
+                <li><NavLink to="/trip">🕶️여행</NavLink></li>
+                <li><NavLink to="/festival">🎇축제</NavLink></li>
+                <li><NavLink to="/study">✏️공부</NavLink></li>
             </ul>
 
             </div>
