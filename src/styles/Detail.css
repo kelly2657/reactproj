@@ -1,6 +1,5 @@
 .Viewer{
     position: fixed;
-    /* background-color: aqua; */
     left:300px;
     right:0cap;
     top: 79px;
@@ -8,24 +7,42 @@
 }
 
 #Contents-box{
-    /* position: relative; */
     height: 100%;
     margin: 0;
     display: grid;
     place-items: center;
-    /* top: 50%; */
-    
-    /* transform: translate(-2%, 30%); */
+    word-break:break-all;
 }
 
 .Content{
-    /* position: absolute;
-    transform:translate(30%,30%); */
     width: 70%;
     height: 70%;
-    background-color: aqua;
     display: grid;
     place-items: center;
     margin-top: -2%;
     margin-bottom: 6%;
+}
+
+.img-box{
+    height: 100%;
+    color: #58b9d1;
+    display: grid;
+    grid-template-areas:
+    "img-Card img-Card"
+    "img-Card img-Card";
+    grid-template-columns: 50% 2fr;
+    grid-template-rows: 50% 1fr 100%;
+}
+
+.img-Card{
+    width: 80px;
+   padding: 1.5%
+}
+
+.img-size{
+    grid-area: img-Card;
+    height: 330px;
+    background-size: cover;
+    width: 500px;
+    
 }
