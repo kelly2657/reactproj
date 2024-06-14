@@ -3,10 +3,10 @@
 .container {
   font-family: 'DM Sans';
 }
-.card-list {
+.cards {
   display: flex;
   flex-wrap: wrap;
-  /* width: 75%; 반응형일 때 */
+  /* width: 75%; 반응형이면 */
   width: 1300px;
 
   margin-left: 50px;
