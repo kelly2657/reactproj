@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './pages/Home';
-import Profile from './pages/Profile';
+import Profile from './component/Profile';
 import DarkMode from './component/Darkmode';
 import './styles/Darkmode.css';
 
