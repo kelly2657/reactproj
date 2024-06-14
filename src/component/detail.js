@@ -3,20 +3,19 @@ import { Route, Routes } from "react-router-dom";
 import '../styles/Detail.css';
 
 
-// require.context를 사용하여 폴더 내 모든 이미지 가져오기
 const importAll = (requireContext) => 
     requireContext.keys().map(requireContext);
 
 const imagePath = importAll(require.context('../img', true, /\.(png|jpe?g|svg)$/));
-console.log(imagePath);
+
 
 function Foods() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/food-")
-            img.push(<div className="img-Card">
-                <img className="img-size" key={i} src={imagePath[i]}  width="600%"></img>
-                </div>);
+            img.push(<div className="img-Card" key={i}>
+                <img className="img-size"  src={imagePath[i]}  width="600%"></img>
+                </div> );
     }
 
     return (
@@ -31,8 +30,8 @@ function Trip() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/trip-")
-            img.push(<div className="img-Card">
-                <img className="img-size" key={i} src={imagePath[i]}  width="600%"></img>
+            img.push(<div className="img-Card" key={i}>
+                <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 </div>);
     }
 
@@ -47,8 +46,8 @@ function Festival() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 10) === "/festival-")
-            img.push(<div className="img-Card">
-                <img className="img-size" key={i} src={imagePath[i]}  width="600%"></img>
+            img.push(<div className="img-Card" key={i}>
+                <img className="img-size" src={imagePath[i]}  width="600%"></img>
                 </div>);
     }
 
@@ -63,8 +62,8 @@ function Study() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 7) === "/study-")
-            img.push(<div className="img-Card">
-                <img className="img-size" key={i} src={imagePath[i]}  width="600%"></img>
+            img.push(<div className="img-Card" key={i}>
+                <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 </div>);
     }
 

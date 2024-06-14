@@ -31,18 +31,18 @@
     "img-Card img-Card"
     "img-Card img-Card";
     grid-template-columns: 50% 2fr;
-    grid-template-rows: 50% 1fr 100%;
+    grid-template-rows: 45% 1fr 100%;
 }
 
 .img-Card{
-    width: 80px;
-   padding: 1.5%
+   padding: 4%;
+   width:80%
 }
 
 .img-size{
     grid-area: img-Card;
     height: 330px;
     background-size: cover;
-    width: 500px;
-    
+    width: 600px;
+    margin: 20px;
 }
