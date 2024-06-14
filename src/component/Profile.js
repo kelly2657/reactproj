@@ -10,10 +10,10 @@ function Profile(){
 
             <div id="introducing-blog"><p>제 블로그에는 ~~~ 이런 주제의 글을 올리고 있습니다</p></div>
             <div id="Category"><ul className="no-dot">
-                <li><NavLink to="#">음식</NavLink></li>
-                <li><NavLink to="#">여행</NavLink></li>
-                <li><NavLink to="#">축제</NavLink></li>
-                <li><NavLink to="#">공부</NavLink></li>
+                <li><NavLink to="/category/food">음식</NavLink></li>
+                <li><NavLink to="/category/trip">여행</NavLink></li>
+                <li><NavLink to="/category/Festival">축제</NavLink></li>
+                <li><NavLink to="/category/study">공부</NavLink></li>
                 </ul></div>
 
         </div>

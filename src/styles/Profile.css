@@ -5,7 +5,19 @@
     height: 100%;
     
   }
-  
+
+  li :active{  
+    background-color: beige;
+    text-decoration: none;
+  }
+  li a{
+    text-decoration: none;
+  }
+
+  li{
+    padding-bottom: 6px;
+  }
+
   .Profile-img{
     background-size: cover ;
     vertical-align:middle;
@@ -17,4 +29,9 @@
   .no-dot{
     padding: 0;
     list-style-type: none;
+    
+  }
+
+  #introducing-blog{
+    padding: 20px;
   }
