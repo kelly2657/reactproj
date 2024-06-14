@@ -7,6 +7,7 @@ import Card from './component/Card';
 import './styles/Darkmode.css';
 import Detail from './component/detail';
 
+
 function App() {
   return (
     <div className="App">

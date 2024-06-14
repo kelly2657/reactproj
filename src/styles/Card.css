@@ -2,12 +2,13 @@
 
 .container {
   font-family: 'DM Sans';
+  margin-right: 5px;
 }
 .cards {
   display: flex;
   flex-wrap: wrap;
   /* width: 75%; 반응형이면 */
-  width: 1300px;
+  width: 1000px;
   margin-top: 50px;
   margin-left: 350px;
   padding: 10px;

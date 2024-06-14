@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 import '../styles/Card.css';
 
+
 function Card() {
   let [title, setTitle] = useState([
     '내돈내산 리뷰(광고x)',
     '대만드라마 추천',
     '홍대 나들이',
-    '여름 필수템 추천',
+    '겨울 필수템 추천',
   ]);
   let [날짜, 날짜바꾸기] = useState([
     '24/06/14',

@@ -14,6 +14,8 @@
     position: fixed;
 }
 
+
+
 .logo {
     margin-left: 50px;
     margin-right: 20px;
@@ -23,4 +25,9 @@
 .title {
     margin: 0;
     text-align: left;
+}
+
+.title:hover{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6,
+                 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6;
 }
