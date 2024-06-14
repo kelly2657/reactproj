@@ -1,12 +1,26 @@
-.Header{
-    
-}
-.header-left{
+@font-face {
+    font-family: 'Leckerli One';
+    src: url('../font/LeckerliOne-Regular.ttf');
+  }
+
+.Header {
+    font-family: Leckerli One;
+    color: light;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
 
 }
-.header-title{
-    
+
+.logo {
+    color: light;
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 50px;
 }
-.header-right{
-    
+
+.title {
+    margin: 0;
+    text-align: left;
 }
