@@ -15,7 +15,6 @@ const Header = () => {
             <img src={logoImg} alt="Logo" className="logo" onClick={goHome}/>
             <h1 className="title">Twenty Diary</h1>
             <DarkMode></DarkMode>
-
         </div>
     );
 }

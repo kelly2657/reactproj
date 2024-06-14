@@ -9,22 +9,27 @@ import { Routes, Route } from 'react-router-dom';
 
 const mockData = [
   {
-    id: "mock1",
+    id: "1",
     date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
-    content: "mock1이 어쩌구 저쩌구... ",
-    title: "mock1 입니다",
+    content: "내돈내산 리뷰(광고x) 내용",
+    title: "내돈내산 리뷰(광고x) 제목",
   },
   {
-    id: "mock2",
+    id: "2",
     date: new Date("2024-06-14").getTime(),//new Date().getTime() - 2,
-    content: "mock2이 어쩌구 저쩌구...",
-    title: "mock1 입니다",
+    content: "대만드라마 추천 내용",
+    title: "대만드라마 추천 제목",
   },
   {
-    id: "mock3",
+    id: "3",
     date: new Date("2024-06-13").getTime(),//new Date().getTime() - 3,
-    content: "mock3이 어쩌구 저쩌구...",
-    title: "mock1 입니다",
+    content: "홍대 나들이 내용",
+    title: "홍대 나들이 제목",
+    },{
+      id: "4",
+      date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
+      content: "겨울 필수템 추천 내용",
+      title: "겨울 필수템 추천 제목",
     },
 ];
 
@@ -55,7 +60,7 @@ export const BlogDispatchContext = React.createContext();
 
 function App() {
   const [data, dispatch] = useReducer(reducer, []);
-  const idRef = useRef(0);
+  const idRef = useRef(4);
 
   useEffect(() => {
     dispatch({
