@@ -1,0 +1,44 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.darkmode {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark {
+    background-color: #112233;
+    color: #ffffff;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-button {
+    padding: 12px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.light .toggle-button::before {
+    content: '🌞';
+}
+
+.dark .toggle-button::before {
+    content: '🌜';
+}
