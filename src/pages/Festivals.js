@@ -1,20 +1,21 @@
 import React from "react";
 import Header from '../component/Header';
 import Profile from '../component/Profile';
-import { Food } from "../component/detail";
+import { Festival } from "../component/detail";
 import '../styles/Home.css'
 import '../styles/Darkmode.css';
 
-function Foods(){
+
+function Festivals(){
     return (
         <div className="Home">
             <Header></Header>
             <div className="Content">
                 <Profile></Profile>
-                <Food/>
+                <Festival/>
             </div>
         </div>
     )
 }
 
-export default Foods;
+export default Festivals;
