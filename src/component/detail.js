@@ -1,6 +1,7 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
 import '../styles/Detail.css';
+import '../styles/Card.css';
+import { NavLink } from "react-router-dom";
 
 
 const importAll = (requireContext) => 
@@ -16,7 +17,7 @@ export function Food() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                    <p>Food 게시글 {imagePath[i].substr(19,1)}</p></div></div> );
+                    <NavLink to="/Blog"><p>Food 게시글 {imagePath[i].substr(19,1)}</p></NavLink></div></div> );
     }
 
     return (
@@ -83,7 +84,7 @@ export function Study() {
     )
 }
 
-function Content() {
+export default function Content() {
     const ContentsTitle = <h2>제주도 여행 2박3일 다녀왔습니다</h2>;
     const ContentsBody = <p> 제주도 … 2박 … 3일 … </p>;
     return (

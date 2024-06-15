@@ -123,7 +123,8 @@ function App() {
             <Route path="/trip" element={<Trips />}></Route>
             <Route path="/festival" element={<Festivals />}></Route>
             <Route path="/study" element={<Studies />}></Route>
-            <Route path="/blog/:id" element={<Blog/>}/>
+            <Route path="/Blog" element={<Blog />}></Route>
+            {/* <Route path="/blog/:id" element={<Blog/>}/> */}
               {/* <Route path="/edit/:id" element={<Edit/>}/> */}
               <Route path="/edit/:id" element={<Edit/>}/>
               <Route path="/new" element={<New />} />
