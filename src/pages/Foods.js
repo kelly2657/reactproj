@@ -1,23 +1,23 @@
 import React, { useContext } from "react";
 import Header from '../component/Header';
 import Profile from '../component/Profile';
-import CardList from '../component/CardList'
+import { Food } from "../component/detail";
 import '../styles/Home.css'
 import '../styles/Darkmode.css';
 import { BlogStateContext } from "../App";
 
 
-function Home(){
+function Foods(){
     const data = useContext(BlogStateContext);
     return (
         <div className="Home">
             <Header></Header>
             <div className="Content">
                 <Profile></Profile>
-                <CardList data={data}/>
+                <Food/>
             </div>
         </div>
     )
 }
 
-export default Home;
+export default Foods;

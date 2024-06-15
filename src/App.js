@@ -3,7 +3,8 @@ import './App.css';
 import Home from "./pages/Home";
 // import Blog from "./pages/Blog";
 // import Edit from "./pages/Edit";
-import Detail, { Foods, Trip, Festival, Study } from "./component/detail";
+import Detail, { Trip, Festival, Study } from "./component/detail";
+import Foods from "./pages/Foods";
 import Header from './component/Header';
 import Profile from './component/Profile';
 import './styles/Darkmode.css';
@@ -123,8 +124,8 @@ function App() {
             {/* <Route path="/blog/:id" element={<Blog/>}/>
               <Route path="/edit/:id" element={<Edit/>}/> */}
           </Routes>
-          <Header></Header>
-          <Profile></Profile>
+          {/* <Header></Header>
+          <Profile></Profile> */}
         </div>
       </BlogDispatchContext.Provider>
     </BlogStateContext.Provider>

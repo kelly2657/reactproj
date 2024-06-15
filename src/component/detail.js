@@ -9,7 +9,7 @@ const importAll = (requireContext) =>
 const imagePath = importAll(require.context('../img', true, /\.(png|jpe?g|svg)$/));
 
 
-export function Foods() {
+export function Food() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/food-")
@@ -92,33 +92,4 @@ function Content() {
         </div>
     )
 }
-
-
-function Contents() {
-    return (
-        <div >
-            <div >
-            <Routes>
-                <Route path="/foods" element={<Foods />}></Route>
-                <Route path="/trip" element={<Trip />}></Route>
-                <Route path="/festival" element={<Festival />}></Route>
-                <Route path="/study" element={<Study />}></Route>
-            </Routes>
-            </div>
-        </div>
-    )
-}
-
-
-function Detail() {
-    return (
-        <div >
- 
-            <Contents></Contents>
-
-        </div>
-    )
-}
-
-export default Detail;
 
