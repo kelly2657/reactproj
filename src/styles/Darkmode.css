@@ -1,5 +1,5 @@
 body {
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .darkmode {
@@ -21,8 +21,9 @@ body {
 
 .toggle-container {
     position: absolute;
-    top: 20px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
     z-index: 100;
 }
 
@@ -42,4 +43,48 @@ body {
 
 .dark .toggle-button::before {
     content: '🌜';
+}
+
+.Header {
+    font-family: 'Leckerli One', cursive;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* 이 부분을 지우시면 로고의 위치가 원래대로 돌아갑니다. */
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid;
+    position: fixed;
+    top: 0;
+    background-color: inherit;
+    transition: all 0.4s ease;
+}
+
+.light .Header {
+    color: #000;
+    border-color: #000;
+}
+
+.dark .Header {
+    color: #fff;
+    border-color: #fff;
+}
+
+.Header .Logo {
+    transition: filter 0.4s ease;
+}
+
+.light .Header .Logo {
+    filter: none;
+}
+
+.dark .Header .Logo {
+    filter: invert(100%);
+}
+
+.light .card {
+    border-color: #000; /* 라이트모드에서 border 색상 */
+}
+
+.dark .card {
+    border-color: #fff; /* 다크모드에서 border 색상 */
 }
