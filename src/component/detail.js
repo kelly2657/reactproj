@@ -19,10 +19,11 @@ export function Foods() {
     }
 
     return (
+        <div className="Viewer" >
         <div className="img-box">
             {img}
         </div>
-
+        </div>
     )
 }
 
@@ -36,9 +37,10 @@ export function Trip() {
     }
 
     return (
+        <div className="Viewer" >
         <div className="img-box">
             {img}
-        </div>
+        </div></div>
     )
 }
 
@@ -52,9 +54,10 @@ export function Festival() {
     }
 
     return (
+        <div className="Viewer" >
         <div className="img-box">
             {img}
-        </div>
+        </div> </div>
     )
 }
 
@@ -68,8 +71,10 @@ export function Study() {
     }
 
     return (
+        <div className="Viewer" >
         <div className="img-box">
             {img}
+        </div>
         </div>
     )
 }
@@ -107,7 +112,8 @@ function Contents() {
 
 function Detail() {
     return (
-        <div className="Viewer">
+        <div >
+ 
             <Contents></Contents>
 
         </div>
