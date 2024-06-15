@@ -7,7 +7,7 @@
     height: 100%;
 }
 
- #Contents-box{
+.Contents-box{
     height: 100%;
     margin: 0;
     display: grid;
@@ -15,7 +15,7 @@
     word-break:break-all;
 }
 
-.Content{
+.Content-body{
     width: 70%;
     height: 70%;
     display: grid;
