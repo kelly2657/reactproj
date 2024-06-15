@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div className="Header">
             <img src={logoImg} alt="Logo" className="Logo" onClick={goHome}/>
-            <h1 className="title">Twenty Diary</h1>
+            <h1 className="title" onClick={goHome}>Twenty Diary</h1>
             <DarkMode></DarkMode>
         </div>
     );
