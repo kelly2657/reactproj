@@ -1,16 +1,16 @@
 import Profile from "../component/Profile";
 import Header from '../component/Header';
-import '../styles/Home.css'
 import Content from '../component/detail';
+
+import '../styles/Detail.css';
+import '../styles/Blog.css';
 
 export default function Blog(){
     return(
-        <div className="Home">
-        <Header></Header>
-        <div className="Content">
+        <div>
+            <Header></Header>
             <Profile></Profile>
-            <Content></Content>
+            <Content/>
         </div>
-    </div>
     )
 }

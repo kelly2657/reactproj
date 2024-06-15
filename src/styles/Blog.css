@@ -1,0 +1,16 @@
+#Contents-box{
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    word-break:break-all;
+}
+
+.Content{
+    width: 70%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    margin-top: -2%;
+    margin-bottom: 6%;
+}

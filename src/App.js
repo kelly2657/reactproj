@@ -8,7 +8,6 @@ import Foods from "./pages/Foods";
 import Studies from "./pages/Studies";
 import Trips from "./pages/Trips";
 import Festivals from "./pages/Festivals";
-
 import './styles/Darkmode.css';
 import { Routes, Route } from 'react-router-dom';
 

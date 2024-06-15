@@ -5,14 +5,12 @@ import { Food } from "../component/detail";
 import '../styles/Home.css'
 import '../styles/Darkmode.css';
 
-function Foods(){
+function Foods() {
     return (
         <div className="Home">
             <Header></Header>
-            <div className="Content">
-                <Profile></Profile>
-                <Food/>
-            </div>
+            <Profile></Profile>
+            <Food />
         </div>
     )
 }

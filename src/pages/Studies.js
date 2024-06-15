@@ -10,10 +10,8 @@ function Studies(){
     return (
         <div className="Home">
             <Header></Header>
-            <div className="Content">
-                <Profile></Profile>
-                <Study/>
-            </div>
+            <Profile></Profile>
+            <Study />
         </div>
     )
 }

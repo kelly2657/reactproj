@@ -10,10 +10,8 @@ function Festivals(){
     return (
         <div className="Home">
             <Header></Header>
-            <div className="Content">
-                <Profile></Profile>
-                <Festival/>
-            </div>
+            <Profile></Profile>
+            <Festival />
         </div>
     )
 }
