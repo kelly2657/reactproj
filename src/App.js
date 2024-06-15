@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./pages/Home";
 // import Blog from "./pages/Blog";
 // import Edit from "./pages/Edit";
+import { Foods, Trip, Festival, Study } from "./component/detail";
 
 import './styles/Darkmode.css';
 import { Routes, Route } from 'react-router-dom';
@@ -116,6 +117,10 @@ function App() {
               <Route path="/" element={<Home/>}/>
               {/* <Route path="/blog/:id" element={<Blog/>}/>
               <Route path="/edit/:id" element={<Edit/>}/> */}
+              <Route path="/foods" element={<Foods />}></Route>
+                <Route path="/trip" element={<Trip />}></Route>
+                <Route path="/festival" element={<Festival />}></Route>
+                <Route path="/study" element={<Study />}></Route>
             </Routes>
           </div>
       </BlogDispatchContext.Provider>

@@ -9,7 +9,7 @@ const importAll = (requireContext) =>
 const imagePath = importAll(require.context('../img', true, /\.(png|jpe?g|svg)$/));
 
 
-function Foods() {
+export function Foods() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/food-")
@@ -26,7 +26,7 @@ function Foods() {
     )
 }
 
-function Trip() {
+export function Trip() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/trip-")
@@ -42,7 +42,7 @@ function Trip() {
     )
 }
 
-function Festival() {
+export function Festival() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 10) === "/festival-")
@@ -58,7 +58,7 @@ function Festival() {
     )
 }
 
-function Study() {
+export function Study() {
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 7) === "/study-")
