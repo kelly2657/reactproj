@@ -20,7 +20,7 @@ function Home(){
                 <Profile></Profile>
                 <Detail></Detail>
                 {/* <Card></Card> */}
-                <CardList data={data}/>z
+                <CardList data={data}/>
             </div>
         </div>
     )

@@ -20,8 +20,8 @@ function Card1({id, date, content, title, good}) {
   }
   
   return (
-    <div className='card' onClick={goBlog}>
-        <img alt='' src={process.env.PUBLIC_URL + '/photo' + id + '.jpg'} />
+    <div className='card'>
+        <img alt='' src={process.env.PUBLIC_URL + '/photo' + id + '.jpg'} onClick={goBlog}/>
         <div className='texts'>
           <p>{title}</p>
           <span >{new Date(parseInt(date)).toLocaleDateString()}</span>
