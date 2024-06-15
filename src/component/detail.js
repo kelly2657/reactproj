@@ -15,7 +15,8 @@ export function Food() {
         if(imagePath[i].substr(13, 6) === "/food-")
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
-                </div> );
+                <div className="texts">
+                    <p>Food 게시글 {imagePath[i].substr(19,1)}</p></div></div> );
     }
 
     return (
@@ -33,7 +34,8 @@ export function Trip() {
         if(imagePath[i].substr(13, 6) === "/trip-")
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
-                </div>);
+                <div className="texts">
+                <p>Trip 게시글 {imagePath[i].substr(19,1)}</p></div></div>);
     }
 
     return (
@@ -50,7 +52,8 @@ export function Festival() {
         if(imagePath[i].substr(13, 10) === "/festival-")
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size" src={imagePath[i]}  width="600%"></img>
-                </div>);
+                <div className="texts">
+                <p>Festival 게시글 {imagePath[i].substr(23,1)}</p></div></div>);
     }
 
     return (
@@ -67,7 +70,8 @@ export function Study() {
         if(imagePath[i].substr(13, 7) === "/study-")
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
-                </div>);
+                <div className="texts">
+                <p>Study 게시글 {imagePath[i].substr(20,1)}</p></div></div>);
     }
 
     return (
