@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Edit from "./pages/Edit";
+import New from "./pages/New";
 import Foods from "./pages/Foods";
 import Studies from "./pages/Studies";
 import Trips from "./pages/Trips";
@@ -86,7 +87,7 @@ function App() {
         date: new Date(date).getTime(),
         content,
         title,
-        good
+        good: 0
       },
     });
     idRef.current += 1;
@@ -124,6 +125,8 @@ function App() {
             <Route path="/study" element={<Studies />}></Route>
             <Route path="/blog/:id" element={<Blog/>}/>
               {/* <Route path="/edit/:id" element={<Edit/>}/> */}
+              <Route path="/edit/:id" element={<Edit/>}/>
+              <Route path="/new" element={<New />} />
           </Routes>
           {/* <Header></Header>
           <Profile></Profile> */}
