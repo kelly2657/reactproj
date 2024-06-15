@@ -1,7 +1,8 @@
 import React from "react";
 import '../styles/Detail.css';
 import '../styles/Card.css';
-import { NavLink } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
+
 
 
 const importAll = (requireContext) => 
@@ -11,13 +12,14 @@ const imagePath = importAll(require.context('../img', true, /\.(png|jpe?g|svg)$/
 
 
 export function Food() {
+    
     let img = [];
     for ( let i=0; i<imagePath.length; i++){
         if(imagePath[i].substr(13, 6) === "/food-")
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                    <NavLink to="/Blog"><p>Food 게시글 {imagePath[i].substr(19,1)}</p></NavLink></div></div> );
+                    <NavLink to="/Blog" className="p-title"><p >Food 게시글 {imagePath[i].substr(19,1)}</p></NavLink></div></div> );
     }
 
     return (

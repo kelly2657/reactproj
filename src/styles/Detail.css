@@ -48,6 +48,15 @@
     margin: 20px;
 }
 
-NavLink{
-    text-decoration-line: none;
+.p-title{
+    color: #58b9d1;
 }
+
+a {
+    text-decoration-line: none;
+    
+}
+
+a :hover{  
+    background-color: beige;
+  }
