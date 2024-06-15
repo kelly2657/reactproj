@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Detail, { Foods, Trip, Festival, Study } from "./component/detail";
 import Header from './component/Header';
 import Profile from './component/Profile';
+
 import './styles/Darkmode.css';
 import { Routes, Route } from 'react-router-dom';
 
