@@ -14,6 +14,7 @@ const Header = () => {
         <div className="Header">
             <img src={logoImg} alt="Logo" className="Logo" onClick={goHome}/>
             <h1 className="title" onClick={goHome}>Twenty Diary</h1>
+            <button className='sortBtn'>글 정렬하기</button>
             <DarkMode></DarkMode>
         </div>
     );
