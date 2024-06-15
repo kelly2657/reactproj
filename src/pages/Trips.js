@@ -10,10 +10,8 @@ function Trips(){
     return (
         <div className="Home">
             <Header></Header>
-            <div className="Content">
-                <Profile></Profile>
-                <Trip/>
-            </div>
+            <Profile></Profile>
+            <Trip />
         </div>
     )
 }

@@ -1,12 +1,14 @@
-#Contents-box{
+.Contents-box{
     height: 100%;
+    top:0;
     margin: 0;
     display: grid;
     place-items: center;
     word-break:break-all;
+    background-color: aqua;
 }
 
-.Content{
+.Content-body{
     width: 70%;
     height: 70%;
     display: grid;

@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/Detail.css';
 import '../styles/Card.css';
 import { NavLink  } from "react-router-dom";
+import food1 from '../img/food-1.jpg';
 
 
 
@@ -92,16 +93,18 @@ export function Study() {
 }
 
 export default function Content() {
-    const ContentsTitle = <h2>제주도 여행 2박3일 다녀왔습니다</h2>;
-    const ContentsBody = <p> 제주도 … 2박 … 3일 … </p>;
+    const ContentsTitle = <div>제주도 여행 2박3일 다녀왔습니다</div>;
+    const ContentsBody = <div> 제주도 … 2박 … 3일 … </div>;
     return (
-        <div id="Contents-box">
-        <article className="Content">
+        <div>
+         <div className="Contents-box">
+        <div className="Content-body">
+            {/* <img src={food1}></img> */}
             {ContentsTitle}
             {ContentsBody}
-            
-        </article>
-        </div>
+            </div>
+         </div>
+         </div>
     )
 }
 
