@@ -19,7 +19,7 @@ export function Food() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                    <NavLink to="/Blog" className="p-title"><p >Food 게시글 {imagePath[i].substr(19,1)}</p></NavLink></div></div> );
+                    <NavLink to="/Blog" className="p-title"><span>Food 게시글 {imagePath[i].substr(19,1)}</span></NavLink></div></div> );
     }
 
     return (
