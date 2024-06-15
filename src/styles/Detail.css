@@ -51,7 +51,7 @@
 .p-title{
     color: #58b9d1;
     padding: 10px;
-
+    z-index: 10;
 }
 
 a {
