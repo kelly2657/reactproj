@@ -1,8 +1,8 @@
 import React, { useReducer, useRef, useEffect } from "react";
 import './App.css';
 import Home from "./pages/Home";
-// import Blog from "./pages/Blog";
-// import Edit from "./pages/Edit";
+import Blog from "./pages/Blog";
+import Edit from "./pages/Edit";
 import Detail, { Trip, Festival, Study } from "./component/detail";
 import Foods from "./pages/Foods";
 import Header from './component/Header';
@@ -121,8 +121,8 @@ function App() {
             <Route path="/trip" element={<Trip />}></Route>
             <Route path="/festival" element={<Festival />}></Route>
             <Route path="/study" element={<Study />}></Route>
-            {/* <Route path="/blog/:id" element={<Blog/>}/>
-              <Route path="/edit/:id" element={<Edit/>}/> */}
+            <Route path="/blog/:id" element={<Blog/>}/>
+              {/* <Route path="/edit/:id" element={<Edit/>}/> */}
           </Routes>
           {/* <Header></Header>
           <Profile></Profile> */}

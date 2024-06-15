@@ -13,7 +13,7 @@ function Edit(){
         <div className="Edit">
             <Header></Header>
             <div className="Content">
-                {/* <Profile></Profile> */}
+                <Profile></Profile>
                 <Editor></Editor>
             </div>
         </div>
