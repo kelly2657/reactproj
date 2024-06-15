@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Detail, { Foods, Trip, Festival, Study } from "./component/detail";
 import Header from './component/Header';
 import Profile from './component/Profile';
-
 import './styles/Darkmode.css';
 import { Routes, Route } from 'react-router-dom';
 
@@ -31,14 +30,14 @@ const mockData = [
     content: "홍대 나들이 내용",
     title: "홍대 나들이 제목",
     good: 0
-    },{
-      id: "4",
-      date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
-      content: "겨울 필수템 추천 내용",
-      title: "겨울 필수템 추천 제목",
-      good: 0
+  }, {
+    id: "4",
+    date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
+    content: "겨울 필수템 추천 내용",
+    title: "겨울 필수템 추천 제목",
+    good: 0
 
-    },
+  },
 ];
 
 function reducer(state, action) {
@@ -113,20 +112,20 @@ function App() {
 
   return (
     <BlogStateContext.Provider value={data}>
-      <BlogDispatchContext.Provider value={{onCreate, onUpdate, onDelete}}>
-          <div className='App'>
-            <Routes>
-              <Route path="/" element={<Home/>}/>
-              {/* <Route path="/blog/:id" element={<Blog/>}/>
+      <BlogDispatchContext.Provider value={{ onCreate, onUpdate, onDelete }}>
+        <div className='App'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/foods" element={<Foods />}></Route>
+            <Route path="/trip" element={<Trip />}></Route>
+            <Route path="/festival" element={<Festival />}></Route>
+            <Route path="/study" element={<Study />}></Route>
+            {/* <Route path="/blog/:id" element={<Blog/>}/>
               <Route path="/edit/:id" element={<Edit/>}/> */}
-             
-             
-             
-            </Routes>
-            <Header></Header>
-             <Profile></Profile> 
-              <Detail />
-          </div>
+          </Routes>
+          <Header></Header>
+          <Profile></Profile>
+        </div>
       </BlogDispatchContext.Provider>
     </BlogStateContext.Provider>
   );
