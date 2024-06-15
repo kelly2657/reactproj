@@ -1,8 +1,8 @@
 import React, { useReducer, useRef, useEffect } from "react";
 import './App.css';
 import Home from "./pages/Home";
-import Blog from "./pages/Blog";
-import Edit from "./pages/Edit";
+// import Blog from "./pages/Blog";
+// import Edit from "./pages/Edit";
 
 import './styles/Darkmode.css';
 import { Routes, Route } from 'react-router-dom';
@@ -13,23 +13,28 @@ const mockData = [
     date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
     content: "내돈내산 리뷰(광고x) 내용",
     title: "내돈내산 리뷰(광고x) 제목",
+    good: 0
   },
   {
     id: "2",
     date: new Date("2024-06-14").getTime(),//new Date().getTime() - 2,
     content: "대만드라마 추천 내용",
     title: "대만드라마 추천 제목",
+    good: 0
   },
   {
     id: "3",
     date: new Date("2024-06-13").getTime(),//new Date().getTime() - 3,
     content: "홍대 나들이 내용",
     title: "홍대 나들이 제목",
+    good: 0
     },{
       id: "4",
       date: new Date("2024-05-31").getTime(),//new Date().getTime() - 1,
       content: "겨울 필수템 추천 내용",
       title: "겨울 필수템 추천 제목",
+      good: 0
+
     },
 ];
 
@@ -69,20 +74,21 @@ function App() {
     });
   }, []);
 
-  const onCreate = (date, content, title) => {
+  const onCreate = (date, content, title, good) => {
     dispatch({
       type: "CREATE",
       data: {
         id: idRef.current,
         date: new Date(date).getTime(),
         content,
-        title
+        title,
+        good
       },
     });
     idRef.current += 1;
   };
 
-  const onUpdate = (targetId, date, content, title) => {
+  const onUpdate = (targetId, date, content, title, good) => {
     dispatch({
       type: "UPDATE",
       data: {
@@ -90,6 +96,7 @@ function App() {
         date: new Date(date).getTime(),
         content,
         title,
+        good
       },
     });
   };
@@ -107,8 +114,8 @@ function App() {
           <div className='App'>
             <Routes>
               <Route path="/" element={<Home/>}/>
-              <Route path="/blog/:id" element={<Blog/>}/>
-              <Route path="/edit/:id" element={<Edit/>}/>
+              {/* <Route path="/blog/:id" element={<Blog/>}/>
+              <Route path="/edit/:id" element={<Edit/>}/> */}
             </Routes>
           </div>
       </BlogDispatchContext.Provider>
