@@ -19,7 +19,9 @@ export function Food() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                    <NavLink to="/Blog" className="p-title"><span>Food 게시글 {imagePath[i].substr(19,1)}</span></NavLink></div></div> );
+                    <NavLink to="/Blog" className="p-title">
+                    <span>Food 게시글 {imagePath[i].substr(19,1)}</span>
+                    </NavLink></div></div> );
     }
 
     return (
@@ -38,7 +40,8 @@ export function Trip() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                <p>Trip 게시글 {imagePath[i].substr(19,1)}</p></div></div>);
+                <NavLink to="/Blog" className="p-title">
+                <span>Trip 게시글 {imagePath[i].substr(19,1)}</span></NavLink></div></div>);
     }
 
     return (
@@ -56,7 +59,8 @@ export function Festival() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size" src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                <p>Festival 게시글 {imagePath[i].substr(23,1)}</p></div></div>);
+                <NavLink to="/Blog" className="p-title">
+                <span>Festival 게시글 {imagePath[i].substr(23,1)}</span></NavLink></div></div>);
     }
 
     return (
@@ -74,7 +78,8 @@ export function Study() {
             img.push(<div className="img-Card" key={i}>
                 <img className="img-size"  src={imagePath[i]}  width="600%"></img>
                 <div className="texts">
-                <p>Study 게시글 {imagePath[i].substr(20,1)}</p></div></div>);
+                <NavLink to="/Blog" className="p-title">
+                <span>Study 게시글 {imagePath[i].substr(20,1)}</span></NavLink></div></div>);
     }
 
     return (
