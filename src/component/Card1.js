@@ -10,18 +10,22 @@ function Card1({id, date, content, title, good}) {
   const data = useBlog(id);
   const navigate = useNavigate();
    
-  const Incgood = () => {
+  const incGood = () => {
     onUpdate(id, date, content, title, good+1);
     navigate("/", { replace: true });
   }
+  const goBlog= () => {
+    navigate(`/blog/${id}`, { replace: true });
+
+  }
   
   return (
-    <div className='card'>
+    <div className='card' onClick={goBlog}>
         <img alt='' src={process.env.PUBLIC_URL + '/photo' + id + '.jpg'} />
         <div className='texts'>
           <p>{title}</p>
           <span >{new Date(parseInt(date)).toLocaleDateString()}</span>
-          <span onClick={Incgood}>❤️</span>
+          <span onClick={incGood}>❤️</span>
           <h3>{good}</h3>  
           <div>
 
