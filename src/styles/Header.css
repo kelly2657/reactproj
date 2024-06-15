@@ -3,6 +3,11 @@
     src: url('../font/LeckerliOne-Regular.ttf');
   }
 
+  @font-face {
+    font-family: 'Gothic';
+    src: url('../font/GothicA1-Regular.ttf');
+  }
+
 .Header {
     font-family: Leckerli One;
     color: light;
@@ -38,12 +43,12 @@
   }
   
   .sortBtn {
+    font-family: Gothic;
     border-radius: 5px;
     border: 2px solid #4a5b80;
     background-color: white;
     color: #4a5b80;
     margin-right: 10px;
-    margin-top: 30px;
-    
+    margin-top: 10px;
     
   }
