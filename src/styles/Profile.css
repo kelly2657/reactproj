@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Gothic';
+  src: url('../font/GothicA1-Regular.ttf');
+}
+
 .Profile-style{
+  font-family: Gothic;
   position: fixed;
   background-color: #A7D8FB;
   width:300px;

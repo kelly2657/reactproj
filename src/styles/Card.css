@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+  font-family: 'Gothic';
+  src: url('../font/GothicA1-Regular.ttf');
+}
 
 .container {
-  font-family: 'DM Sans';
   margin-right: 5px;
   position: fixed;
 }
@@ -29,12 +31,15 @@
   /* object-fit: cover; */
 }
 .card p {
+  font-family: Gothic;
   font-size: 20px;
 }
 .texts p {
+  font-family: Gothic;
   font-weight: 600;
 }
 .texts {
+  font-family: Gothic;
   display: flex;
   justify-content: space-between;
   align-items: center;
