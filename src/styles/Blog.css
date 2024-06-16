@@ -1,18 +1,19 @@
-.Contents-box{
-    height: 100%;
-    top:0;
-    margin: 0;
-    display: grid;
-    place-items: center;
-    word-break:break-all;
-    /* background-color: aqua; */
-}
+/* .Contents-box {
+  height: 100%;
+   top: 0; 
+   margin: 0; 
+  display: grid;
+  place-items: center;
+  word-break: break-all;
+  background-color: aqua;
+} */
 
-.Content-body{
-    width: 70%;
-    height: 70%;
-    display: grid;
-    place-items: center;
-    margin-top: -2%;
-    margin-bottom: 6%;
-}
+/* .Content-body {
+  width: 70%;
+  height: 70%;
+  display: grid;
+  place-items: center;
+  margin-top: -2%;
+  margin-bottom: 6%;
+  background-color: pink;
+} */

@@ -1,66 +1,73 @@
+.Viewer {
+  position: fixed;
+  left: 300px;
+  right: 0cap;
+  top: 79px;
+  height: 100%;
+}
+.Cotents-container {
+  /* background-color: beige; */
+  margin-top: 70px;
+  margin-left: 260px;
+  display: flex;
+  justify-content: center;
+}
+.Contents-box {
+  height: 800px;
+  width: 800px;
 
-.Viewer{
-    position: fixed;
-    left:300px;
-    right:0cap;
-    top: 79px;
-    height: 100%;
+  display: grid;
+
+  place-items: center;
+  word-break: break-all;
+  background-color: aqua;
 }
 
-.Contents-box{
-    height: 100%;
-    margin: 0;
-    display: grid;
-    place-items: center;
-    word-break:break-all;
+.Content-body {
+  width: 70%;
+  height: 70%;
+  display: grid;
+  place-items: center;
+  margin-top: -2%;
+  margin-bottom: 6%;
+  /* background-color: pink; */
 }
 
-.Content-body{
-    width: 70%;
-    height: 70%;
-    display: grid;
-    place-items: center;
-    margin-top: -2%;
-    margin-bottom: 6%;
-} 
-
-.img-box{
-    height: 100%;
-    color: #58b9d1;
-    display: grid;
-    grid-template-areas:
-    "img-Card img-Card"
-    "img-Card img-Card";
-    grid-template-columns: 50% 2fr;
-    grid-template-rows: 45% 1fr 100%;
+.img-box {
+  height: 100%;
+  color: #58b9d1;
+  display: grid;
+  grid-template-areas:
+    'img-Card img-Card'
+    'img-Card img-Card';
+  grid-template-columns: 50% 2fr;
+  grid-template-rows: 45% 1fr 100%;
 }
 
-.img-Card{
-   padding: 4%;
-   width:80%
+.img-Card {
+  padding: 4%;
+  width: 80%;
 }
 
-.img-size{
-    grid-area: img-Card;
-    height: 330px;
-    background-size: cover;
-    width: 600px;
-    margin: 20px;
+.img-size {
+  grid-area: img-Card;
+  height: 330px;
+  background-size: cover;
+  width: 600px;
+  margin: 20px;
 }
 
-.p-title{
-    color: #58b9d1;
-    padding: 10px;
-    z-index: 10;
+.p-title {
+  color: #58b9d1;
+  padding: 10px;
+  z-index: 10;
 }
 
 a {
-    text-decoration-line: none;
-    font-weight: bold;
-
+  text-decoration-line: none;
+  font-weight: bold;
 }
 
-a :hover{  
-    background-color: beige;
-    
-  }
+a :hover {
+  background-color: beige;
+}
