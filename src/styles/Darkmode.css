@@ -82,9 +82,9 @@ body {
 }
 
 .light .card {
-    border-color: #000; /* 라이트모드에서 border 색상 */
+    border-color: #000;
 }
 
 .dark .card {
-    border-color: #fff; /* 다크모드에서 border 색상 */
+    border-color: #fff; 
 }

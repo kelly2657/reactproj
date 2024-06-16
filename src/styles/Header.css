@@ -27,7 +27,7 @@
 .title {
     margin: 0;
     text-align: left;
-    margin-left: 300px;
+    margin-left: -100px;
 }
 
 .sortBtn:hover{
