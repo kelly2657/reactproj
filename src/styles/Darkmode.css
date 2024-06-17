@@ -49,7 +49,7 @@ body {
     font-family: 'Leckerli One', cursive;
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* 이 부분을 지우시면 로고의 위치가 원래대로 돌아갑니다. */
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     border-bottom: 1px solid;
