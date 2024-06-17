@@ -1,36 +1,44 @@
+@font-face {
+  font-family: 'Gothic';
+  src: url('../font/GothicA1-Regular.ttf');
+}
+
 .Viewer {
+  font-family: Gothic;
   position: fixed;
   left: 300px;
   right: 0cap;
   top: 79px;
   height: 100%;
+
 }
 .Cotents-container {
-  /* background-color: beige; */
-  margin-top: 70px;
-  margin-left: 260px;
-  display: flex;
+  font-family: Gothic;
+  padding-top: 70px;
+  padding-left: 260px;
+  display: grid;
+  height: calc(100vh - 70px);
   justify-content: center;
+  
 }
 .Contents-box {
+  font-family: Gothic;
   height: 800px;
   width: 800px;
-
+  height : 100%;
   display: grid;
-
   place-items: center;
   word-break: break-all;
-  background-color: aqua;
 }
 
 .Content-body {
+  font-family: Gothic;
   width: 70%;
   height: 70%;
   display: grid;
   place-items: center;
   margin-top: -2%;
   margin-bottom: 6%;
-  /* background-color: pink; */
 }
 
 .img-box {
@@ -70,4 +78,13 @@ a {
 
 a :hover {
   background-color: beige;
+}
+
+
+.span-title {
+  color: #58b9d1;
+  padding: 10px;
+  text-decoration-line: none;
+  font-weight: bold;
+  font-size: larger;
 }
